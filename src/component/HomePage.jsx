@@ -6,8 +6,19 @@ import waveSVG from '../assets/svg/101786-wave.json';
 import emailSVG from '../assets/svg/95247-email.json';
 import viteSVG from '../assets/svg/viteLogo.svg';
 import netlifySVG from '../assets/svg/netlifyLogo.svg';
+import tsLogoSVG from '../assets/svg/tsLogo.svg';
+import node from '../assets/svg/Node.js_logo.svg';
+import next from '../assets/svg/next.svg';
+import git from '../assets/svg/git.svg';
+import clodflare from '../assets/svg/cloudflare.svg';
+import mongo from '../assets/svg/mongo.svg';
+import postgres from '../assets/svg/postgres.svg';
+import turbo from '../assets/svg/turbo.svg';
+import cpp from '../assets/svg/cpp.svg';
+import tailwind from '../assets/svg/tailwind.svg';
+import express from '../assets/svg/express.svg';
 import sassSVG from '../assets/svg/sassLogo.svg';
-import myResume from '../assets/pdf/ocean-waring-resume.pdf';
+import myResume from '../assets/pdf/GauravResume_offCampus.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faHtml5, faCss3, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
@@ -29,8 +40,9 @@ export default function HomePage() {
               className="logo"
               ref={ref}
               onClick={() => ref.current.scrollTo(0)}
+              style={{color:"purple"}}
             >
-              OCEAN
+              गौरव शर्मा
               <span
                 style={{
                   color: "rgb(217, 4, 41)",
@@ -50,16 +62,18 @@ export default function HomePage() {
                     ? ref.current.scrollTo(2.5)
                     : ref.current.scrollTo(2.25)
                 }
+                style={{color:"purple"}}
               >
                 PROJECTS
               </li>
-              <li ref={ref} onClick={() => ref.current.scrollTo(1)}>
+              <li ref={ref} onClick={() => ref.current.scrollTo(1)} style={{color:"purple"}}>
                 RESUME
               </li>
               <li
                 style={{ fontWeight: "200" }}
                 ref={ref}
                 onClick={() => ref.current.scrollTo(3)}
+                style={{color:"purple"}}
               >
                 CONTACT
               </li>
@@ -71,23 +85,24 @@ export default function HomePage() {
           <section className="introSection">
             <div style={{ display: "flex" }}>
               <div className="introText">
-                <h1>MY NAME IS OCEAN WARING</h1>
-                <p>FRONTEND REACT DEVELOPER</p>
-                <p>
-                  Based in NYC{" "}
+                <h1 style={{color:"purple"}}>I AM GAURAV SHARMA</h1>
+                <h2>Electrical Engineering | NIT RKL'25</h2>
+                <h2>MERN Developer</h2>
+                <h2>
+                  Based in Jaipur{" "}
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     style={{ color: "red" }}
                   />
-                </p>
+                </h2>
                 <div className="contactBtns">
                   <a
                     target="#"
-                    href="https://www.linkedin.com/in/ocean-waring/"
+                    href="www.linkedin.com/in/gaurav-sharma-9556b2196"
                   >
                     <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
                   </a>
-                  <a target="#" href="https://github.com/Ocn-W">
+                  <a target="#" href="https://github.com/gauravrdj">
                     <FontAwesomeIcon className="github" icon={faGithub} />
                   </a>
                 </div>
@@ -97,23 +112,16 @@ export default function HomePage() {
           </section>
         </ParallaxLayer>
 {/* SVG Transition Section */}
-        <ParallaxLayer offset={0.75} speed={1}>
+        {/* <ParallaxLayer offset={0.75} speed={1}>
           <Lottie className="lottieWave" animationData={waveSVG} />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 {/* About Me Section */}
         <ParallaxLayer offset={1}>
           <section className="aboutMe">
             <div className="aboutIntro">
-              <h2>ABOUT ME</h2>
+              <h2 style={{color:"purple"}}>ABOUT ME</h2>
               <p>
-                Hello! I am a Front End React developer based in NYC.
-                Currently building a strong and growing skill set in HTML5, CSS3/SCSS,
-                JavaScript, Redux/Jotai, React, React Native, and TDD using Jest. I consistently improve a keen eye for design
-                and a commitment to producing logical, accessible, and
-                responsive code. I am dedicated to continuous learning and
-                staying up-to-date with the latest trends and best coding
-                practices, ensuring that I can be a useful team player and
-                provide efficient solutions. Let's connect and discuss how I can
+              Welcome to my portfolio! I am Gaurav Sharma, an aspiring Electrical Engineer currently in my prefinal year at NIT Rourkela. Alongside my core engineering studies, I am a passionate MERN stack developer with a strong foundation in C++ and Data Structures & Algorithms (DSA).  Let's connect and discuss how I can
                 contribute to your web development team!
               </p>
             </div>
@@ -128,7 +136,7 @@ export default function HomePage() {
             </div>
           </section>
           <section className="techStack">
-            <h2>MY TECHSTACK</h2>
+            <h2 style={{color:"purple"}}>MY TECHSTACK</h2>
             <div className="scrollStack">
               <div className="stackLogos">
                 <FontAwesomeIcon
@@ -146,14 +154,26 @@ export default function HomePage() {
                   icon={faJsSquare}
                   style={{ color: "gold" }}
                 />
-                <img src={sassSVG} />
+                {/* <img src={sassSVG} /> */}
+                
                 <FontAwesomeIcon
                   className="reactLogo"
                   icon={faReact}
                   style={{ color: "cyan" }}
                 />
                 <img src={viteSVG} />
+                <img src={cpp} />
                 <img src={netlifySVG} />
+                <img src={tsLogoSVG} />
+                <img src={node} />
+                <img src={next} />
+                <img src={git} />
+                <img src={clodflare} />
+                <img src={mongo} />
+                <img src={turbo} />
+                <img src={postgres} />
+                <img src={express} />
+                <img src={tailwind} />
               </div>
               <div className="stackLogos" aria-hidden="true">
                 <FontAwesomeIcon
@@ -171,14 +191,26 @@ export default function HomePage() {
                   icon={faJsSquare}
                   style={{ color: "gold" }}
                 />
-                <img src={sassSVG} />
+                {/* <img src={sassSVG} /> */}
+                <FontAwesomeIcon icon="fa-brands fa-node-js" />
                 <FontAwesomeIcon
                   className="reactLogo"
                   icon={faReact}
                   style={{ color: "cyan" }}
                 />
                 <img src={viteSVG} />
-                <img src={netlifySVG} /> 
+                <img src={cpp} />
+                <img src={netlifySVG} />
+                <img src={tsLogoSVG} />
+                <img src={node} />
+                <img src={next} />
+                <img src={git} />
+                <img src={clodflare} />
+                <img src={mongo} />
+                <img src={turbo} />
+                <img src={postgres} /> 
+                <img src={express} />
+                <img src={tailwind} />
               </div>
             </div>
           </section>
@@ -186,7 +218,7 @@ export default function HomePage() {
 {/* Projects Section */}
         <ParallaxLayer offset={window.innerWidth < 768 ? 2.5 : 2.25}>
           <section className="projectSection">
-            <h2>PROJECTS</h2>
+            <h2 style={{color:"purple"}}>PROJECTS</h2>
             <Projects />
           </section>
         </ParallaxLayer>
@@ -198,7 +230,7 @@ export default function HomePage() {
         >
           <Lottie className="lottieEmail" animationData={emailSVG} />
           <section className="contactSection">
-            <h2>LETS WORK</h2>
+            <h2 style={{color:"purple"}}>LETS WORK</h2>
             <div className="formContainer">
               <form
                 netlify
@@ -217,6 +249,7 @@ export default function HomePage() {
                     name="name"
                     required
                     aria-required="true"
+                    placeholder='Gaurav Sharma'
                   />
                 </label>
 
@@ -228,6 +261,7 @@ export default function HomePage() {
                     name="email"
                     required
                     aria-required="true"
+                    placeholder='gauravjdh2021@gmail.com'
                   />
                 </label>
 
@@ -238,10 +272,11 @@ export default function HomePage() {
                     rows="4"
                     required
                     aria-required="true"
+                    placeholder='Hi There!'
                   ></textarea>
                 </label>
 
-                <button type="submit">Submit</button>
+                <button type="submit" >Submit</button>
               </form>
             </div>
           </section>

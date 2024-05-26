@@ -98,7 +98,7 @@ export default function HomePage() {
                 <div className="contactBtns">
                   <a
                     target="#"
-                    href="www.linkedin.com/in/gaurav-sharma-9556b2196"
+                    href="https://www.linkedin.com/in/gaurav-sharma-9556b2196"
                   >
                     <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
                   </a>

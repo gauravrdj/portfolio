@@ -70,7 +70,7 @@ export default function HomePage() {
                 RESUME
               </li>
               <li
-                style={{ fontWeight: "200" }}
+                style={{ fontWeight: "300" }}
                 ref={ref}
                 onClick={() => ref.current.scrollTo(3)}
                 style={{color:"purple"}}
@@ -85,7 +85,7 @@ export default function HomePage() {
           <section className="introSection">
             <div style={{ display: "flex" }}>
               <div className="introText">
-                <h1 style={{color:"purple"}}>I AM GAURAV SHARMA</h1>
+                <h1>I AM GAURAV SHARMA</h1>
                 <h2>Electrical Engineering | NIT RKL'25</h2>
                 <h2>MERN Developer</h2>
                 <h2>

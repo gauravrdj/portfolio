@@ -111,15 +111,17 @@ nav {
 .introText {
     height: fit-content;
     cursor: default;
+    color: purple;
 }
 
 .introText h1 {
-    font-weight: 300;
+    font-weight: 500;
+    color: red;
 }
 
 .profileImg {
-    height: 150px;
-    width: 150px;
+    height: 250px;  /* Increased height */
+    width: 250px;   /* Increased width */
     margin-top: 50px;
     margin-left: 50px;
     background-image: url(../assets/selfie.jpg);
@@ -128,6 +130,7 @@ nav {
     border-radius: 50%;
     animation: floatingImg infinite 3s ease-in;
 }
+
 
 @keyframes floatingImg {
     50% {
@@ -149,7 +152,7 @@ nav {
 }
 
 .github {
-    color: orangered;
+    color: black;
     cursor: pointer;
     height: 40px;
 }
@@ -302,7 +305,7 @@ label {
 
     .navOptions li {
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     .introText {

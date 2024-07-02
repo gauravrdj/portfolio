@@ -100,7 +100,7 @@ export default function Projects() {
           </ul>
         </>
       ),
-      demoUrl: "https://securetransaction.netlify.app/",
+      demoUrl: "https://p2ptransfer.netlify.app/",
       image: paymentsApp,
     },
     {
